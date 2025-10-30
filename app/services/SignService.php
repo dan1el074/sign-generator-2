@@ -49,8 +49,8 @@ class SignService {
         if ($sign->getWithWhatsapp()) {
             $whatsappPhone = str_replace([" ", "|", "-"], "", $phone);
 
-            $whatsapp = "<a style=\"text-decoration: none\" href=\"https://wa.me/{$whatsappPhone}\" title=\"Conversar com {$sign->getPhone()}\" target=\"
-                _blank\"><img width=\"26\" height=\"26\" style=\"max-width: 688px; margin: 0px\" src=\"https://metaro.com.br/images/icon-wpp.png\"/></a>";
+            $whatsapp = "<a href=\"https://wa.me/{$whatsappPhone}\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Conversar com {$sign->getPhone()}\" style=\"text-decoration:
+                none\"><img src=\"https://metaro.com.br/images/icon-wpp.png\" width=\"26\" height=\"26\" style=\"max-width:688px; margin:0px\"></a>";
         }
         
         if ($sign->getWithPGS()) {

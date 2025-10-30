@@ -1,4 +1,5 @@
 const input = document.getElementById("phone");
+const resetInput = document.getElementById("reset");
 const wpp = document.getElementById("withWhatsapp");
 
 input.addEventListener("input", function (e) {
@@ -24,3 +25,7 @@ input.addEventListener("input", function (e) {
 
     e.target.value = value;
 });
+
+resetInput.addEventListener("click", () => {
+    wpp.disabled = true;
+})
