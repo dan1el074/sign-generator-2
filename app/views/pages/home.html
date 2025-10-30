@@ -1,0 +1,38 @@
+<h1>Gerador de assinaturas</h1>
+
+<section class="sign">
+    <form action="sign" method="post">
+        <label for="name">Nome:</label>
+        <input id="name" name="name" type="text" required />
+        
+        <label for="position">Cargo:</label>
+        <input id="position" name="position" type="text" required />
+
+        <label for="phone">Número corporativo:</label>
+        <input id="phone" name="phone" type="text" />
+
+        <div class="check">
+            <div>
+                <input id="withWhatsapp" name="withWhatsapp" type="checkbox" disabled />
+                <label for="withWhatsapp">Possui Whatsapp</label>
+            </div>
+
+            <div>
+                <input id="withPGS" name="withPGS" type="checkbox" checked />
+                <label for="withPGS">Incluir selo PGS</label>
+            </div>
+            
+            <div>
+                <input id="newTab" name="newTab" type="checkbox" checked />
+                <label for="newTab">Abrir em nova guia</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input class="button" type="submit" name="go" value="Gerar" />
+            <input class="button" type="reset" value="Reset" />
+        </div>
+    </form>
+</section>
+
+<script src="{{ publicDir }}/js/main.js"></script>
